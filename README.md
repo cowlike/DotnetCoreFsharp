@@ -14,4 +14,4 @@
  
 ## Run it
     dotnet test
-    dotnet run
+    dotnet run -p Main/Main.fsproj
