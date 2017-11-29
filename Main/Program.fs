@@ -1,8 +1,11 @@
-﻿// Learn more about F# at http://fsharp.org
+﻿module Main
 
-open System
+let name args = 
+    if Array.isEmpty args 
+    then "World" 
+    else args.[0]
 
 [<EntryPoint>]
 let main argv =
-    printfn "Hello World from F#!"
-    0 // return an integer exit code
+    printfn "Hello %s from F#!" <| name argv
+    0
