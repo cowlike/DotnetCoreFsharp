@@ -7,7 +7,9 @@
     dotnet new xunit -n Tests -o Tests -lang f#
     dotnet sln add Tests/Tests.fsproj Main/Main.fsproj
     dotnet add Tests/Tests.fsproj reference Main/Main.fsproj
- 
+
+Note that the above app is also modified to work with type providers by adding fcs.props [as described in this Github issue](https://github.com/Microsoft/visualfsharp/issues/3303)
+
 ## Optionally add more packages
     dotnet add Tests/Tests.fsproj package unquote
     dotnet add Main/Main.fsproj package System.Composition
