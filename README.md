@@ -1,8 +1,10 @@
 # Create .NET Core solution from CLI
 
 ## Create the app
-    dotnet new sln -o MyApp
-    cd MyApp
+    APP=MyApp
+    
+    dotnet new sln -o $APP
+    cd $APP
     dotnet new console -n Main -o Main -lang f#
     dotnet new xunit -n Tests -o Tests -lang f#
     dotnet sln add Tests/Tests.fsproj Main/Main.fsproj
